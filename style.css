@@ -87,5 +87,46 @@ nav #box #social a:nth-child(2) {
 #content h1 {
   text-align: center;
   margin-top: 46px;
+  font-weight: 300;
+  letter-spacing: 9.6px;
+  font-size: 32px;
+}
+
+#news {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#news div {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+#news div h3 {
+  color: #49aa45;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  text-align: center;
+}
+
+#news div h4 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5.5px;
+  text-align: center;
+}
+
+#news div p {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8px;
 }
 /*# sourceMappingURL=style.css.map */
