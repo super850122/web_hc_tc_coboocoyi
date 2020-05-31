@@ -7,18 +7,73 @@
 
 #banner{
     background-image: url(./img/banner.png);
-    width: 1980px;
+    width: 1920px;
     height: 1280px;
+    display: grid;
+    align-items: center;
+}
+
+img{
+    margin: 0 auto;
 }
 //導覽頁
 nav{
     //固定
     position: fixed;
+    width: 1920px;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
     //導覽列內的盒子
     #box{
         margin: 59px auto 0;
         width: 1200px;
         display: grid;
-        grid-template-columns: 204px 351px 398px 120px 110;
+        grid-template-columns: 204px 351px 398px 120px 110px;
+        
+        #link{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: flex-end;
+        }
+        
+        a{
+            font-size: 18px;
+            font-weight: 100;
+
+            &:nth-child(2){
+                text-align: center;
+            }
+
+            &:nth-child(3){
+                text-align: right;
+            }
+        }
+
+        #social{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: flex-end;
+
+            a:nth-child(2){
+                text-align: right;
+            }
+        }
+    
+    }
+
+}
+
+#content{
+    width: 1920px;
+    height: 500px;
+    background-image: url(./img/paper.png);
+
+    h1{
+        text-align: center;
+        margin-top: 46px;
+        font-size: 32px;
     }
 }
