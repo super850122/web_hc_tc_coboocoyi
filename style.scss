@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+#banner{
+    background-image: url(./img/banner.png);
+    width: 1980px;
+    height: 1280px;
+}
+//導覽頁
+nav{
+    //固定
+    position: fixed;
+    //導覽列內的盒子
+    #box{
+        margin: 59px auto 0;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 204px 351px 398px 120px 110;
+    }
+}
